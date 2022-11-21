@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import ThemeContext from "../context/ThemeContext";
 import Battle from "./Battle";
 import Header from "./Header";
@@ -13,28 +13,24 @@ function App() {
     localStorage.setItem("theme", JSON.stringify(theme));
   }, [theme]);
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className={theme === "dark" ? "dark" : ""}>
         <div className="container">
           <ThemeContext.Provider value={theme}>
             <Header setTheme={setTheme} />
             <Switch>
-              <Route path={process.env.PUBLIC_URL + "/"} exact>
+              <Route path="/" exact>
                 <Popular />
               </Route>
-              <Route path={process.env.PUBLIC_URL + "/battle"} exact>
+              <Route path="/battle" exact>
                 <Battle />
               </Route>
-              <Route
-                path={process.env.PUBLIC_URL + "/battle/result"}
-                exact
-                component={Result}
-              />
+              <Route path="/battle/result" exact component={Result} />
             </Switch>
           </ThemeContext.Provider>
         </div>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 export default App;
