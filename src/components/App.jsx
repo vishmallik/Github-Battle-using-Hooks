@@ -19,13 +19,17 @@ function App() {
           <ThemeContext.Provider value={theme}>
             <Header setTheme={setTheme} />
             <Switch>
-              <Route path="/" exact>
+              <Route path={process.env.PUBLIC_URL + "/"} exact>
                 <Popular />
               </Route>
-              <Route path="/battle" exact>
+              <Route path={process.env.PUBLIC_URL + "/battle"} exact>
                 <Battle />
               </Route>
-              <Route path="/battle/result" exact component={Result} />
+              <Route
+                path={process.env.PUBLIC_URL + "/battle/result"}
+                exact
+                component={Result}
+              />
             </Switch>
           </ThemeContext.Provider>
         </div>
