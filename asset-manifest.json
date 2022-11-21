@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "https://vishmallik.github.io/Github-Battle-using-Hooks/static/css/main.79bcf600.css",
-    "main.js": "https://vishmallik.github.io/Github-Battle-using-Hooks/static/js/main.f334e115.js",
+    "main.js": "https://vishmallik.github.io/Github-Battle-using-Hooks/static/js/main.8bb01bd4.js",
     "index.html": "https://vishmallik.github.io/Github-Battle-using-Hooks/index.html",
     "main.79bcf600.css.map": "https://vishmallik.github.io/Github-Battle-using-Hooks/static/css/main.79bcf600.css.map",
-    "main.f334e115.js.map": "https://vishmallik.github.io/Github-Battle-using-Hooks/static/js/main.f334e115.js.map"
+    "main.8bb01bd4.js.map": "https://vishmallik.github.io/Github-Battle-using-Hooks/static/js/main.8bb01bd4.js.map"
   },
   "entrypoints": [
     "static/css/main.79bcf600.css",
-    "static/js/main.f334e115.js"
+    "static/js/main.8bb01bd4.js"
   ]
 }
