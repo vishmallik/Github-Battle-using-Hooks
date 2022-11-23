@@ -42,7 +42,6 @@ function Battle() {
 
   function handleSubmit(event, username, id) {
     event.preventDefault();
-    console.log(username, id);
     if (id === 1) {
       setPlayerOne(username);
     }
