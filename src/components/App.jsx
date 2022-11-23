@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import ThemeContext from "../context/ThemeContext";
 import Battle from "./Battle";
+import Footer from "./Footer";
 import Header from "./Header";
 import Popular from "./Popular";
 import Result from "./Result";
@@ -29,6 +30,7 @@ function App() {
             </Switch>
           </ThemeContext.Provider>
         </div>
+        <Footer />
       </div>
     </HashRouter>
   );

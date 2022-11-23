@@ -1,5 +1,4 @@
-import { useContext, useEffect, useState } from "react";
-import Loader from "./Loader";
+import { useCallback, useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ThemeContext from "../context/ThemeContext";
 function Result(props) {
@@ -9,27 +8,33 @@ function Result(props) {
   let playerOne = new URLSearchParams(props.location.search).get("playerOne");
   let playerTwo = new URLSearchParams(props.location.search).get("playerTwo");
 
+  const fetchData = useCallback(
+    async (playerId) => {
+      let userData = await (
+        await fetch(`https://api.github.com/users/${playerId}`)
+      ).json();
+
+      if (playerId === playerOne) {
+        setPlayerOneData(userData);
+      }
+      if (playerId === playerTwo) {
+        setPlayerTwoData(userData);
+      }
+    },
+    [playerOne, playerTwo]
+  );
+
   useEffect(() => {
     fetchData(playerOne);
     fetchData(playerTwo);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [playerOne, playerTwo]);
-
-  async function fetchData(playerId) {
-    let userData = await (
-      await fetch(`https://api.github.com/users/${playerId}`)
-    ).json();
-
-    if (playerId === playerOne) {
-      setPlayerOneData(userData);
-    }
-    if (playerId === playerTwo) {
-      setPlayerTwoData(userData);
-    }
-  }
+  }, [playerOne, playerTwo, fetchData]);
 
   if (!playerOneData || !playerTwoData) {
-    return <Loader />;
+    return (
+      <h2 className="loader">
+        Battling<span className="loading"></span>
+      </h2>
+    );
   } else {
     let winner = "";
     if (score(playerOneData) > score(playerTwoData)) {
