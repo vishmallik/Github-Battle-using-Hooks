@@ -65,7 +65,7 @@ Start the server
 
 ## Demo
 
-https://github.com/vishmallik/Github-Battle-using-Hooks.git
+https://vishmallik.github.io/Github-Battle-using-Hooks
 
 ## Authors
 
