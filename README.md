@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Github Battle
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An open, extensible, platform for github users to track top repositories of various programming languages.
 
-## Available Scripts
+## Badges
 
-In the project directory, you can run:
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-### `npm start`
+[![React.js](https://img.shields.io/badge/Frontend-React.js-blue)](https://reactjs.org/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Github Top Stars**
 
-### `npm test`
+Show a list of 30 most starred Github Repos for languages like :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- JavaScript
+- Ruby
+- Python
+- Java
+- CSS
+- Overall
 
-### `npm run build`
+**Github Battle**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Github Battle accept two github username. And battles them on the basis of their number of followers, repos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The player with higher score wins.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This App support Dark mode. Dark mode switch is given at the top.
 
-### `npm run eject`
+## Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Top 30 Repos**
+![Screenshot (11)](https://user-images.githubusercontent.com/64186460/203708460-b766d90a-d9a6-46cb-847d-dc91c212a50b.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Battle Page**
+![Screenshot (12)](https://user-images.githubusercontent.com/64186460/203708469-4d252725-4501-4131-a3eb-555972001b9d.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Results Page**
+![Screenshot (13)](https://user-images.githubusercontent.com/64186460/203708471-fc27465d-7643-4988-9161-2c071921abb1.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Dark mode support**
+![Screenshot (15)](https://user-images.githubusercontent.com/64186460/203708475-c26e6776-249f-43dc-b2ba-f44a5dfc30e5.png)
 
-## Learn More
+## Run Locally
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clone the project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  git clone https://github.com/vishmallik/Github-Battle-using-Hooks.git
+```
 
-### Code Splitting
+Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+  npm install
+```
 
-### Analyzing the Bundle Size
+Start the server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+  npm run start
+```
 
-### Making a Progressive Web App
+## Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+https://github.com/vishmallik/Github-Battle-using-Hooks.git
 
-### Advanced Configuration
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [@vishmallik](https://www.github.com/vishmallik)
 
-### Deployment
+## Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+If you have any feedback, please reach out to me at vishmallik@gmail.com
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT](https://choosealicense.com/licenses/mit/)
